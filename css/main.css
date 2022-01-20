@@ -61,6 +61,7 @@ header {
 
 .container {
   width: 1200px;
+  height: 251px;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid; */
@@ -327,8 +328,34 @@ button {
   color: var(--primery-text-color);
 }
 
+.item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-position: center;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-color: var(--fon-button-color);
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 .list-title {
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-style: normal;
