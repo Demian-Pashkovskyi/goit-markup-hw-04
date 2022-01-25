@@ -42,7 +42,6 @@ li {
 }
 
 body {
-	/* background-color: var(--primery-fon-color); */
 	color: var(--title-text-color);
 	font-family: Roboto, sans-serif;
 }
@@ -149,6 +148,7 @@ ul {
 }
 
 .contacts-list .link {
+	align-items: center;
 	display: flex;
 	color: var(--title-text-color);
 	text-decoration: none;
@@ -515,7 +515,8 @@ button {
 	margin-right: 0px;
 }
 
-.icons-comand:hover {
+.icons-comand:hover,
+.icons-comand:focus {
 	background-color: var(--accent-color);
 	color: #fff;
 }
@@ -597,7 +598,8 @@ button {
 	margin-bottom: 0px;
 }
 
-.proect-section:hover {
+.proect-section:hover,
+.proect-section:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -703,11 +705,16 @@ img {
 	color: rgba(175, 177, 184, 1);
 }
 
-.icons-clients:hover {
+.icons-clients:hover,
+.icons-clients:focus {
 	color: rgba(33, 150, 243, 1);
 	fill: rgba(33, 150, 243, 1);
 }
 
+.section-item-clients:focus,
+.section-item-clients:hover {
+	border: 1px solid rgba(33, 150, 243, 1);
+}
 /*--Page Footer--*/
 
 .order-adres {
@@ -807,6 +814,7 @@ img {
 	margin-right: 0px;
 }
 
-.icons:hover {
+.icons:hover,
+.icons:focus {
 	background-color: var(--accent-color);
 }
